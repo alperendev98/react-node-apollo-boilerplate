@@ -1,0 +1,39 @@
+{
+  "name": "axis-web-app-v2.0",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://alex-oliynyk@bitbucket.org/simpleray/axis-web-app-v2.0.git",
+  "author": "Alperen Aksoy <alperenaksoydev@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "node": "^10.10.0",
+    "npm": "^6.4.1",
+    "yarn": "^1.9.4"
+  },
+  "scripts": {
+    "launch:all": "docker-compose up --build",
+    "launch:all:test": "docker-compose up --build --detach",
+    "check-branch-name": "git-branch-is -r '.*(feature|fix)/\\d{1,4}' && echo '=====Branch name OK!=====\n'",
+    "lint:api": "cd api && yarn run lint",
+    "lint:web": "cd web && yarn run lint",
+    "test:api": "cd api && yarn && yarn run test",
+    "test:web": "cd web && yarn && CI=true yarn run test -- --coverage",
+    "test": "yarn run launch:all:test && yarn run install:all && yarn run test:api && yarn run test:web && docker-compose down",
+    "install:api": "cd api && yarn",
+    "install:web": "cd web && yarn",
+    "install:all": "yarn && yarn run install:api && yarn run install:web",
+    "start": "yarn run install:all && yarn run launch:all"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "git-branch-is": "^2.0.0",
+    "pre-commit": "^1.2.2"
+  },
+  "pre-commit": [
+    "check-branch-name",
+    "lint:api",
+    "lint:web",
+    "test"
+  ]
+}

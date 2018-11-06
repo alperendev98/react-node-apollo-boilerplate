@@ -1,0 +1,14 @@
+:root {
+    --gray: #c0c2c6;
+    --dark-gray: #3c3f49;
+    --fluent-gray: #f6f7f8;
+    --soft-gray: #eff0f2;
+    --border-gray: #e1e2e5;
+    --white: #ffffff;
+    --yellow: #ffc600;
+    --soft-yellow: #fcda64;
+    --heavy-yellow: #ffb500;
+    --dark-blue: #1c1f2a;
+    --black: #000;
+    --modal-overlay: #0000004d;
+}  

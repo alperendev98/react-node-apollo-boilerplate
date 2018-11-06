@@ -1,0 +1,47 @@
+.modal__title {
+  display: flex;
+  align-items: center;
+  height: 72px;
+  padding-left: 32px;
+  font-family: Lato;
+  font-size: 21px;
+  font-weight: bold;
+  border-bottom: solid 1px var(--soft-gray);
+}
+
+.modal__content {
+  margin-top: 32px;
+}
+
+.modal__footer {
+  display: flex;
+  float: right;
+  margin: 25px 32px 32px 0;
+}
+
+.modal__btn {
+  padding: 8px 16px;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.modal__btn:hover {
+  opacity: 0.7;
+}
+
+.modal__btn-cancel {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  color: #c0c2c6;
+  border: 1px solid var(--fluent-gray);
+}
+
+.modal__btn-save {
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 4px;
+  background-color: var(--yellow);
+}

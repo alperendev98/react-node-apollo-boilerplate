@@ -1,0 +1,28 @@
+.side-nav__container {
+    height: 100%;
+    padding:0 30px 0 37px;
+    color: var(--white);
+    background-color: var(--dark-blue);
+}
+
+.side-nav__title {
+    padding: 23px 0 30px;
+}
+
+.side-nav__item {
+    font-size: 12px;
+    padding-bottom: 8px;
+    margin: 10px 0;
+    color: var(--gray);
+    border-bottom: 1px solid var(--gray);
+}
+
+.side-nav__sub-item {
+    font-size: 14px;
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.side-nav__sub-item:hover {
+    opacity: 0.5;
+}

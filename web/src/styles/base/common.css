@@ -1,0 +1,12 @@
+input:focus,
+select:focus,
+textarea:focus,
+button:focus,
+div:focus {
+    outline: none;
+}
+
+.ReactModal__Overlay {
+    display: flex;
+    background-color: var(--modal-overlay) !important;
+}

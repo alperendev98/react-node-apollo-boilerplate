@@ -1,0 +1,46 @@
+.header__container {
+    height: 100%;
+    padding-right: 40px;
+}
+
+.header__account {
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 100%;
+}
+
+.header__account-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+}
+
+.header__filter {
+    float: right;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-right: 30px;
+}
+
+.header__filter-icon {
+    width: 14px;
+    height: 14px;
+    margin-left: -25px;
+}
+
+.header__filter-box {
+    height: 26px;
+    width: 200px;
+    padding-left: 14px;
+    border: solid 1px #c0c2c6;
+    border-radius: 4px;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    float: right;
+    height: 100%;
+}

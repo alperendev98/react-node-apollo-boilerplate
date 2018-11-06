@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideBarComponent should match previos snapshot for SideBarComponent 1`] = `
+<div
+  className="side-bar__container"
+>
+  <div
+    className="side-bar__logo"
+  >
+    <img
+      className="side-bar__logo-icon"
+      src="logo.svg"
+    />
+  </div>
+  <div
+    className="side-bar__nav"
+  >
+    <div
+      className="side-bar__nav-item"
+    >
+      <img
+        className="side-bar__nav-item-icon"
+        src="icon-invoice.svg"
+      />
+    </div>
+    <div
+      className="side-bar__nav-item side-bar__nav-item--manage"
+    >
+      <img
+        className="side-bar__nav-item-icon"
+        src="icon-speed.svg"
+      />
+    </div>
+    <div
+      className="side-bar__nav-item"
+    >
+      <img
+        className="side-bar__nav-item-icon"
+        src="icon-target.svg"
+      />
+    </div>
+    <div
+      className="side-bar__nav-item"
+    >
+      <img
+        className="side-bar__nav-item-icon"
+        src="icon-mail.svg"
+      />
+    </div>
+    <div
+      className="side-bar__nav-item"
+    >
+      <img
+        className="side-bar__nav-item-icon"
+        src="icon-settings.svg"
+      />
+    </div>
+  </div>
+</div>
+`;

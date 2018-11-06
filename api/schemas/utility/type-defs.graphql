@@ -1,0 +1,104 @@
+scalar DateTime
+
+type Utility {
+	id: ID!
+	name: String!
+	value: Float!
+	avoided_cost_rate: Float!
+	metering_policy: String!
+	metering_type: String!
+	contact_info: String!
+	address: String!
+	city: String!
+	state: String!
+	zipcode: String!
+	phone: String!
+	website: String!
+	utility_type: String!
+	areas_served: String!
+	gt_provider: String!
+	interconnection_policy: String!
+	related_documents: String!
+	in_utilities_list: Boolean!
+	frequently_used_utility: Boolean!
+	metering_dates: [DateTime!]
+}
+
+type UtilityNode {
+	cursor: String!
+	node: Utility!
+}
+
+type PageInfo {
+	startCursor: String!
+	endCursor: String!
+	hasPreviousPage: Boolean!
+	hasNextPage: Boolean!
+}
+
+type UtilityConnection {
+	edges: [UtilityNode]!
+	count: Int!
+	endCursorOffset: Int!
+	startCursorOffset: Int!
+	pageInfo: PageInfo!
+}
+
+type Mutation {
+	createUtility(
+		id: ID!
+		name: String!
+		value: Float!
+		avoided_cost_rate: Float!
+		metering_policy: String!
+		metering_type: String!
+		contact_info: String!
+		address: String!
+		city: String!
+		state: String!
+		zipcode: String!
+		phone: String!
+		website: String!
+		utility_type: String!
+		areas_served: String!
+		gt_provider: String!
+		interconnection_policy: String!
+		related_documents: String!
+		in_utilities_list: Boolean!
+		frequently_used_utility: Boolean!
+		metering_dates: [DateTime!]
+	): Utility!
+
+	deleteUtility(
+		id: ID!
+	): Boolean
+
+	updateUtility(
+		id: ID!
+		name: String
+		value: Float
+		avoided_cost_rate: Float
+		metering_policy: String
+		metering_type: String
+		contact_info: String
+		address: String
+		city: String
+		state: String
+		zipcode: String
+		phone: String
+		website: String
+		utility_type: String
+		areas_served: String
+		gt_provider: String
+		interconnection_policy: String
+		related_documents: String
+		in_utilities_list: Boolean
+		frequently_used_utility: Boolean
+		metering_dates: [DateTime!]
+	): Utility!
+}
+
+type Query {
+	utility(id: ID!): Utility
+}
+

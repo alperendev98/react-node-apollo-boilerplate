@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.833 19.5">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="noun_invoice_1465914_000000" transform="translate(-177.25 -120.25)">
+        <path id="Path_846" d="M193.333 126.255v11.972a.744.744 0 0 1-.715.772h-13.834a.8.8 0 0 1-.784-.772v-16.494a.769.769 0 0 1 .784-.733h9.31z" class="cls-1" data-name="Path 846"/>
+        <path id="Path_847" d="M621.264 126.287h-4.5a.8.8 0 0 1-.766-.782V121" class="cls-1" data-name="Path 847" transform="translate(-427.931)"/>
+        <path id="Line_101" d="M8.805 0H0" class="cls-1" data-name="Line 101" transform="translate(181.264 135)"/>
+        <path id="Path_848" d="M340.4 296.334a1.478 1.478 0 1 0 1.476-1.478 1.478 1.478 0 1 1 1.478-1.478" class="cls-1" data-name="Path 848" transform="translate(-158.667 -166.971)"/>
+        <path id="Line_102" d="M0 1.43V0" class="cls-1" data-name="Line 102" transform="translate(183.214 130.841)"/>
+        <path id="Line_103" d="M0 1.428V0" class="cls-1" data-name="Line 103" transform="translate(183.214 123.499)"/>
+    </g>
+</svg>

@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EquipmentComponent should match previos snapshot for EquipmentComponent 1`] = `
+<div
+  className="equipment__wrapper"
+>
+  <div
+    className="equipment__container"
+  >
+    <Component>
+      <div>
+        Admin Equipment Component
+      </div>
+    </Component>
+  </div>
+</div>
+`;

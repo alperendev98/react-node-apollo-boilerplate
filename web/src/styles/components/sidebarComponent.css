@@ -1,0 +1,36 @@
+.side-bar__container {
+    height: 100%;
+    background-color: var(--dark-blue);
+}
+
+.side-bar__logo {
+    height: 60px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-bar__logo-icon {
+    width: 36px;
+    height: 36px;
+}
+
+.side-bar__nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
+    cursor: pointer;
+    border-right: 2px solid var(--dark-blue);
+}
+
+.side-bar__nav-item:hover {
+    opacity: 0.6;
+    border-right: 2px solid var(--yellow);
+}
+
+.side-bar__nav-item-icon {
+    max-width: 18px;
+    max-height: 18px;
+}

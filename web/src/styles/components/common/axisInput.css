@@ -1,0 +1,55 @@
+.axis-input {
+  width: 100%;
+  position: relative;
+}
+
+.axis-input__label {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.axis-input__input-container img {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 14px;
+  top: 35px;
+  pointer-events: none;
+}
+
+.axis-input__object {
+  height: 33px;
+  width: calc(100% - 20px);
+  text-indent: 14px;
+  border-radius: 4px;
+  border: solid 1px #3c3f49;
+  color: #1c1f2a;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.axis-input__object-icon {
+  text-indent: 36px;
+}
+
+.axis-input:focus-within .axis-input__label {
+  position: absolute;
+  top: 17px;
+  left: 10px;
+  padding: 0px 5px;
+  background: white;
+}
+
+.axis-input:focus-within .axis-input__input-container {
+  margin-top: 26px;
+}
+
+.axis-input:focus-within .axis-input__input-container input {
+  border: 1px solid var(--yellow);
+  outline: 1px solid var(--yellow);
+}

@@ -1,0 +1,28 @@
+{
+	"env": {
+		"isProduction": false
+	},
+	"server": {
+		"host": "0.0.0.0",
+		"port": 8080,
+		"corsWhitelist": ["newqa.simpleray.com"],
+		"allowGraphqlIntrospection": true
+	},
+	"database": {
+		"username": "postgres",
+		"password": 123456,
+		"host": "/cloudsql/simpleray-qa:us-central1:simpleray-qaa-db",
+		"name": "simpleray",
+		"port": 5432
+	},
+	"logging": {
+		"level": "silly",
+		"console": {
+			"isEnabled": true
+		},
+		"fs": {
+			"isEnabled": true,
+			"logDir": "./logs"
+		}
+	}
+}

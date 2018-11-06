@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 17.209">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#ffc600;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="noun_speed_meter_1397814_000000" data-name="noun_speed meter_1397814_000000" transform="translate(-119.25 -166.259)">
+        <path id="Path_849" d="M129 169.411V167m-4.665 4.348l-1.7-1.7M138 176h-2.411m-.225-6.355l-1.7 1.7M122.411 176H120" class="cls-1" data-name="Path 849"/>
+        <path id="Path_850" d="M124.342 181.063l-1.476 1.7A9.235 9.235 0 0 1 120 176.4a9 9 0 1 1 15.369 6.36l-1.7-1.7" class="cls-1" data-name="Path 850" transform="translate(0 -.391)"/>
+        <ellipse id="Ellipse_4" cx="1.419" cy="1.419" class="cls-1" data-name="Ellipse 4" rx="1.419" ry="1.419" transform="translate(127.581 175.968)"/>
+        <path id="Path_851" d="M512 370.385V366" class="cls-1" data-name="Path 851" transform="translate(-383 -194.431)"/>
+    </g>
+</svg>

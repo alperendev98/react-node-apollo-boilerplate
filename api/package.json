@@ -1,0 +1,69 @@
+{
+  "name": "axis-api-server",
+  "version": "0.1.0",
+  "description": "Axis web app v2.0 api server",
+  "engines": {
+    "node": "^10.10.0",
+    "npm": "^6.4.1",
+    "yarn": "^1.9.4"
+  },
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "test": "NODE_ENV=testing jest --coverage --runInBand --forceExit",
+    "lint": "echo '\n=== Api lint ===' && prettier --write './**/*.js' && eslint --fix '*.js' '!(coverage|node_modules)/**/*.js'",
+    "start": "node server.js",
+    "start:dev": "NODE_ENV=default npx nodemon server.js",
+    "fmt": "prettier --write './**/**/*.js' && eslint --fix ./*.js"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chance": "^1.0.16",
+    "config": "^2.0.1",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "eslint-restricted-globals": "^0.1.1",
+    "express": "~4.16.0",
+    "express-graphql": "^0.6.12",
+    "git-branch-is": "^2.0.0",
+    "graphql": "^14.0.2",
+    "graphql-disable-introspection": "^1.0.1",
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^3.1.1",
+    "morgan": "~1.9.0",
+    "pg": "^7.4.3",
+    "sequelize": "^4.38.1",
+    "uuid": "^3.3.2",
+    "winston": "^3.1.0",
+    "winston-daily-rotate-file": "^3.3.3"
+  },
+  "keywords": [
+    "expressjs"
+  ],
+  "author": "Alex O.",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.5.0",
+    "eslint-restricted-globals": "^0.1.1",
+    "jest": "^23.6.0",
+    "moxios": "^0.4.0",
+    "nodemon": "^1.18.4",
+    "prettier": "1.14.2",
+    "sequelize-mock": "^0.10.2",
+    "standard": "^12.0.1",
+    "supertest": "^3.3.0"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 70,
+        "functions": 70,
+        "lines": 70,
+        "statements": 70
+      }
+    }
+  }
+}
+

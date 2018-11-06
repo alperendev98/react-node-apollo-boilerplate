@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MenuComponent.js TESTS should match previos snapshot for MenuComponent 1`] = `
+<div>
+  <WithStyles(Button)
+    aria-haspopup="true"
+    aria-owns={null}
+    buttonRef={[Function]}
+    className="menu__icon-postion"
+    onClick={[Function]}
+  />
+  <div
+    className="menu__box-postion"
+  >
+    <WithTheme(Popper)
+      disablePortal={true}
+      open={false}
+      transition={true}
+    >
+      <Component />
+    </WithTheme(Popper)>
+  </div>
+</div>
+`;

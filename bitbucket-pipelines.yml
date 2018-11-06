@@ -1,0 +1,159 @@
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:10.10.0
+
+pipelines:
+  branches:
+    development:
+      - step:
+          name: Running unit and integration tests
+          image: node:10.10.0
+          caches:
+            - node
+          script:
+            - export DOCKER_COMPOSE_VERSION=1.22.0
+            - export DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)
+            - curl -L $DOCKER_COMPOSE_URL > docker-compose
+            - chmod +x docker-compose
+            - mv docker-compose /usr/local/bin
+            - yarn test
+          services:
+            - docker
+      - step:
+          name: Build WEB
+          image: node:10.10.0
+          caches:
+            - node
+          script:
+            - cd web
+            - rm .env
+            - mv envs/.env.development .env # making proper .env file to be used during the build time
+            - yarn
+            - yarn run build
+          artifacts:
+            - web/build/**
+      - step:
+          name: Deploy API and WEB to GCloud
+          deployment: test   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          image: google/cloud-sdk:latest
+          script:
+            # need to remove Dockerfiles from app's folder for App engine to deploy the app
+            - rm api/Dockerfile
+            - rm web/Dockerfile
+            # in the build configuration of the create-react-app is set to 'production'
+            # making proper config to be 'production' config at the development server
+            - rm api/config/default.json api/config/production.json api/config/testing.json api/config/staging.json
+            - mv api/config/development.json api/config/production.json
+            - export GOOGLE_API_KEY=$GOOGLE_API_KEY_DEV
+            - echo $GCLOUD_API_KEYFILE_DEV | base64 --decode --ignore-garbage > ./gcloud-api-key.json
+            - gcloud auth activate-service-account --key-file gcloud-api-key.json
+            - gcloud config set project $GCLOUD_PROJECT_DEV
+            - gcloud -q app deploy web/app.yaml
+            - gcloud -q app deploy api/app.dev.yaml  
+
+    staging:
+      - step:
+          name: Running unit and integration tests
+          image: node:10.10.0
+          caches:
+            - node
+          script:
+            - export DOCKER_COMPOSE_VERSION=1.22.0
+            - export DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)
+            - curl -L $DOCKER_COMPOSE_URL > docker-compose
+            - chmod +x docker-compose
+            - mv docker-compose /usr/local/bin
+            - yarn test
+          services:
+            - docker
+      - step:
+          name: Build WEB
+          image: node:10.10.0
+          caches:
+            - node
+          script:
+            - cd web
+            - rm .env
+            - mv envs/.env.staging .env # making proper .env file to be used during the build time
+            - yarn
+            - yarn run build
+          artifacts:
+            - web/build/**
+      - step:
+          name: Deploy API and WEB to GCloud
+          deployment: staging   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          image: google/cloud-sdk:latest
+          script:
+            # need to remove Dockerfiles from app's folder for App engine to deploy the app
+            - rm api/Dockerfile
+            - rm web/Dockerfile
+            # in the build configuration of the create-react-app is set to 'production'
+            # making proper config to be 'production' config at the testing server
+            - rm api/config/default.json api/config/development.json api/config/production.json api/config/testing.json
+            - mv api/config/staging.json api/config/production.json
+            - export GOOGLE_API_KEY=$GOOGLE_API_KEY_QA
+            - echo $GCLOUD_API_KEYFILE_QA | base64 --decode --ignore-garbage > ./gcloud-api-key.json
+            - gcloud auth activate-service-account --key-file gcloud-api-key.json
+            - gcloud config set project $GCLOUD_PROJECT_QA
+            - gcloud -q app deploy web/app.yaml
+            - gcloud -q app deploy api/app.qa.yaml 
+
+    production:
+      - step:
+          name: Running unit and integration tests
+          image: node:10.10.0
+          caches:
+            - node
+          script:
+            - export DOCKER_COMPOSE_VERSION=1.22.0
+            - export DOCKER_COMPOSE_URL=https://github.com/docker/compose/releases/download/${DOCKER_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)
+            - curl -L $DOCKER_COMPOSE_URL > docker-compose
+            - chmod +x docker-compose
+            - mv docker-compose /usr/local/bin
+            - yarn test
+          services:
+            - docker
+      - step:
+          name: Build WEB
+          image: node:10.10.0
+          caches:
+            - node
+          script:
+            - cd web
+            - rm .env
+            - mv envs/.env.production .env # making proper .env file to be used during the build time
+            - yarn
+            - yarn run build
+          artifacts:
+            - web/build/**
+      - step:
+          name: Deploy API and WEB to GCloud
+          deployment: production   # set to test, staging or production
+          # trigger: manual  # uncomment to have a manual step
+          image: google/cloud-sdk:latest
+          script:
+            # need to remove Dockerfiles from app's folder for App engine to deploy the app
+            - rm api/Dockerfile
+            - rm web/Dockerfile
+            # in the build configuration of the create-react-app is set to 'production'
+            # making proper config to be 'production' config at the production server
+            - rm api/config/default.json api/config/development.json api/config/staging.json api/config/testing.json
+            - export GOOGLE_API_KEY=$GOOGLE_API_KEY_PROD
+            - echo $GCLOUD_API_KEYFILE_PROD | base64 --decode --ignore-garbage > ./gcloud-api-key.json
+            - gcloud auth activate-service-account --key-file gcloud-api-key.json
+            - gcloud config set project $GCLOUD_PROJECT_PROD
+            - gcloud -q app deploy web/app.yaml
+            - gcloud -q app deploy api/app.prod.yaml 
+
+# definitions:
+#   services:
+#     postgres:
+#       image: postgres:9.6
+#       environment:
+#         POSTGRES_DB: simpleray
+#         POSTGRES_USER: postgres
+#         POSTGRES_PASSWORD: 123456

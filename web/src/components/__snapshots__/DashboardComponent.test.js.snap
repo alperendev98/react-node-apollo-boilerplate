@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DashboardComponent.js TESTS should match previos snapshot for DashboardComponent 1`] = `
+<Fragment>
+  <Switch>
+    <Route
+      component={[Function]}
+      path="/admin/utilities"
+    />
+    <Route
+      component={[Function]}
+      path="/admin/equipment"
+    />
+    <Redirect
+      push={false}
+      to="/admin/utilities"
+    />
+  </Switch>
+</Fragment>
+`;

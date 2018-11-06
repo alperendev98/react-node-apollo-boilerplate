@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SideNavComponent should match previos snapshot for SideNavComponent 1`] = `
+<div
+  className="side-nav__container"
+/>
+`;

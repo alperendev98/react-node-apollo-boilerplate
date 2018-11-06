@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderComponent should match previos snapshot for HeaderComponent 1`] = `
+<div
+  className="header__container"
+>
+  <div
+    className="header__account"
+  >
+    <img
+      className="header__account-icon"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ3cF4MlqomtuIptSvbEn3QQyhlmdNEB-SAFDzXA7OcdfR2LziVw"
+    />
+  </div>
+  <div
+    className="header__menu"
+  >
+    <MenuComponent />
+  </div>
+  <div
+    className="header__filter"
+  >
+    <input
+      className="header__filter-box"
+      placeholder="Search"
+      type="text"
+    />
+    <img
+      className="header__filter-icon"
+      src="magnifier-tool.svg"
+    />
+  </div>
+</div>
+`;

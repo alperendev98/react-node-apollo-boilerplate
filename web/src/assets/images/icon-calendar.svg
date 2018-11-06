@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18 15.12">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#000;stroke-miterlimit:10;stroke-width:2px}
+        </style>
+    </defs>
+    <g id="noun_Info_1352173_000000" transform="translate(-31.52 -119.683)">
+        <g id="noun_Calendar_1352168_000000" transform="translate(32.52 119.683)">
+            <path id="Path_876" d="M136.387 290.63h-14.976a.513.513 0 0 1-.511-.511v-10.808a.512.512 0 0 1 .511-.511h14.977a.513.513 0 0 1 .511.511v10.807a.516.516 0 0 1-.512.512z" class="cls-1" data-name="Path 876" transform="translate(-120.9 -276.509)"/>
+            <path id="Path_877" d="M461 502.1h2.086" class="cls-1" data-name="Path 877" transform="translate(-454.044 -495.242)"/>
+            <path id="Path_878" d="M251 502.1h2.086" class="cls-1" data-name="Path 878" transform="translate(-248.339 -495.242)"/>
+            <path id="Path_879" d="M671 502.1h2.086" class="cls-1" data-name="Path 879" transform="translate(-659.749 -495.242)"/>
+            <path id="Path_880" d="M461 673.8h2.086" class="cls-1" data-name="Path 880" transform="translate(-454.044 -663.431)"/>
+            <path id="Path_881" d="M251 673.8h2.086" class="cls-1" data-name="Path 881" transform="translate(-248.339 -663.431)"/>
+            <path id="Path_882" d="M312 170.766V166.8" class="cls-1" data-name="Path 882" transform="translate(-308.092 -166.8)"/>
+            <path id="Path_883" d="M712 170.766V166.8" class="cls-1" data-name="Path 883" transform="translate(-699.911 -166.8)"/>
+        </g>
+    </g>
+</svg>

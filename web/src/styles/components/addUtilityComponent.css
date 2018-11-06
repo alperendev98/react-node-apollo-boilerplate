@@ -1,0 +1,28 @@
+.add-utility__container {
+    width: 680px;
+    margin: auto;
+    background-color: var(--white);
+    border: solid 1px var(--soft-gray);
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px 0 rgba(28, 31, 42, 0.08);
+}
+
+.add-utility__header {
+}
+
+.add-utility__title {
+    font-family: Poppins;
+    font-size: 17px;
+}
+
+.add-utility__row {
+    display: flex;
+    width: calc(100% - 64px);
+    padding: 0 30px 20px;
+}
+
+.add-utility__half-row {
+    display: flex;
+    width: calc(50% - 32px);
+    padding: 0 30px 24px;
+}

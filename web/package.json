@@ -1,0 +1,78 @@
+{
+  "name": "test",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "^10.10.0",
+    "npm": "^6.4.1",
+    "yarn": "^1.9.4"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.2.2",
+    "apollo-boost": "^0.1.16",
+    "apollo-cache-inmemory": "^1.2.10",
+    "apollo-client": "^2.4.2",
+    "apollo-link-http": "^1.5.4",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16": "^1.5.0",
+    "git-branch-is": "^2.0.0",
+    "graphql": "^14.0.2",
+    "graphql-tag": "^2.9.2",
+    "husky": "^0.14.3",
+    "jest-enzyme": "^6.1.2",
+    "moment": "^2.22.2",
+    "prettier": "^1.14.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-apollo": "^2.1.11",
+    "react-bem-helper": "^1.4.1",
+    "react-datepicker": "^1.6.0",
+    "react-dom": "^16.5.0",
+    "react-modal": "^3.6.1",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "react-test-renderer": "^16.5.2",
+    "redux": "^4.0.0",
+    "redux-mock-store": "^1.5.3",
+    "redux-thunk": "^2.3.0",
+    "serve": "^10.0.2",
+    "typeface-nunito-sans": "^0.0.54",
+    "typeface-poppins": "^0.0.54"
+  },
+  "scripts": {
+    "lint": "echo '\n=== Web lint ===' && prettier --write './**/*.js'",
+    "start": "serve -s build -l tcp://0.0.0.0:8080",
+    "start:dev": "react-scripts start",
+    "build": "CI=false react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "test:debug": "react-scripts --inspect-brk test --runInBand",
+    "eject": "react-scripts eject"
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": 80
+      }
+    },
+    "collectCoverageFrom": [
+      "**/**/*.{js,jsx}",
+      "!**/registerServiceWorker.js",
+      "!src/index.js",
+      "!src/setupTests.js",
+      "!**/build/**",
+      "!**/coverage/**",
+      "!.prettierrc.js"
+    ]
+  },
+  "devDependencies": {},
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

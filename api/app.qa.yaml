@@ -1,0 +1,14 @@
+runtime: nodejs
+env: flex
+
+service: api-service
+
+manual_scaling:
+  instances: 1
+resources:
+  cpu: 1
+  memory_gb: 0.5
+  disk_size_gb: 10
+
+beta_settings:
+  cloud_sql_instances: simpleray-qa:us-central1:simpleray-qaa-db

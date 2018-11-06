@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LogInComponent.js TESTS should match previos snapshot for LogInComponent 1`] = `
+<div
+  className="login__wrapper"
+>
+  <div
+    className="login__container"
+  >
+    <div
+      className="login__title"
+    >
+      Log In
+    </div>
+    <div
+      className="login__content"
+    >
+      <div
+        className="login__btn-container"
+      >
+        <span
+          className="base__btn base__btn--black"
+          onClick={[Function]}
+        >
+          Log In
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

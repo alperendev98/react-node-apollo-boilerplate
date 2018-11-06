@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UtilityComponent should match previos snapshot for UtilityComponent 1`] = `
+<div
+  className="utility__wrapper"
+>
+  <Component>
+    <div
+      className="utility__container"
+    >
+      <div
+        className="utility__header"
+      >
+        <div
+          className="utility__header-title"
+        >
+          Utillity Management
+        </div>
+        <div
+          className="utility__header-buttons"
+        >
+          <div
+            className="utility__header-button--add"
+          >
+            <div
+              className="utility__button-icon-label"
+            >
+              Add Utility
+            </div>
+            <img
+              className="base__icon"
+              src="icon-add.svg"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        className="utility__content"
+      >
+        <Connect(TableComponent) />
+      </div>
+    </div>
+  </Component>
+  <Component />
+</div>
+`;

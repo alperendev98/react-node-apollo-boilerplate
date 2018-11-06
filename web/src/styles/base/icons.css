@@ -1,0 +1,8 @@
+.base__icon {
+    width: 15px;
+    height: 15px;
+}
+
+.base__icon:hover {
+    opacity: 0.8;
+}

@@ -1,0 +1,71 @@
+
+.menu__box-postion > div{
+    left: -90px !important;
+}
+
+.menu__icon{
+    width: 27px !important ;
+    height: 26px !important;
+    border-radius: 4px !important;
+    background-color: #e6e8ea !important;
+}
+
+.menu__box {
+    width: 220px;
+    border-radius: 4px;
+    box-shadow: 1px 2px 4px 0 rgba(28, 31, 42, 0.08) !important;
+    border: solid 1px #eff0f2 !important;
+    background-color: #ffffff !important;
+}
+
+.menu__item {
+    font-family: NunitoSans !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1.32 !important;
+    color: #3c3f49 !important;
+    padding: 5px 15px !important;
+}
+.menu__item img{
+    width: 15px;
+    display: inline-block;
+    margin-right: 14px;
+}
+
+
+.menu__icon-postion {
+    min-width: auto !important;
+    margin-right: 20px !important;
+    margin-left: 20px !important;
+    position: relative;
+    width: 30px;
+    min-height: 30px !important;
+    display: block !important;
+}
+.menu__icon-postion::before,
+.menu__icon-postion::after{
+    position: absolute;
+    content: "";
+    width: 11.9px;
+    height: 6px;
+    border: 1px solid #949596;
+
+}
+.menu__icon-postion::before {
+    border-right-color: transparent;
+    top: 9px;
+    right: 10px;
+}
+.menu__icon-postion::after {
+    border-left-color: transparent;
+    left: 13px;
+    top: 13px;
+}
+.menu__icon-postion:hover::before{
+    border-color: #3c3f49;
+    border-right-color: transparent;
+}
+.menu__icon-postion:hover::after{
+    border-color: #3c3f49;
+    border-left-color: transparent;
+}

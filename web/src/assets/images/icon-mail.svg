@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.5 14.808">
+    <defs>
+        <style>
+            .cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.5px}
+        </style>
+    </defs>
+    <g id="noun_Mail_1361002_000000" transform="translate(-120.15 -222.05)">
+        <path id="Path_855" d="M137.655 236.108h-15.513a1.246 1.246 0 0 1-1.242-1.242v-10.824a1.246 1.246 0 0 1 1.242-1.242h15.515a1.246 1.246 0 0 1 1.242 1.242v10.823a1.25 1.25 0 0 1-1.244 1.243z" class="cls-1" data-name="Path 855"/>
+        <path id="Path_856" d="M243.836 359l-5.713 4.931-.113.1a1.068 1.068 0 0 1-1.231.028l-.182-.154-5.7-4.9" class="cls-1" data-name="Path 856" transform="translate(-107.469 -133.066)"/>
+        <path id="Line_105" d="M3.769 0L0 3.787" class="cls-1" data-name="Line 105" transform="translate(123.431 229.187)"/>
+        <path id="Line_106" d="M3.769 3.787L0 0" class="cls-1" data-name="Line 106" transform="translate(132.598 229.187)"/>
+    </g>
+</svg>

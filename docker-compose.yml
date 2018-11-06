@@ -1,0 +1,40 @@
+version: '3.7' # specify docker-compose version
+
+# Define the services/containers to be run
+services:
+  api: #name of the second service
+    build: 
+      context: ./api/ # specify the directory of the Dockerfile
+      dockerfile: Dockerfile
+    volumes:
+      - ./api:/usr/src/app
+      - /usr/src/app/node_modules/
+    ports:
+      - "8080:8080" #specify ports forewarding
+    depends_on: 
+      - database
+    links:
+      - database
+
+  web: #name of the second service
+    build: 
+      context: ./web/ # specify the directory of the Dockerfile
+      dockerfile: Dockerfile
+    volumes:
+      - ./web:/usr/src/app
+      - /usr/src/app/node_modules/
+    depends_on: 
+      - api
+    links:
+      - api
+    ports:
+      - "3000:3000" #specify ports forewarding
+
+  database:
+    image: postgres:9.6
+    ports:
+      - "5432:5432" # specify port forewarding
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: postgres
+      POSTGRES_DB: simpleray

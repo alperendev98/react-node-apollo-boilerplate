@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddUtilityComponent TESTS should match previos snapshot for AddUtilityComponent 1`] = `
+<Fragment>
+  <Modal
+    ariaHideApp={true}
+    bodyOpenClassName="ReactModal__Body--open"
+    className="add-utility__container"
+    closeTimeoutMS={0}
+    isOpen={false}
+    parentSelector={[Function]}
+    portalClassName="ReactModalPortal"
+    role="dialog"
+    shouldCloseOnEsc={true}
+    shouldCloseOnOverlayClick={true}
+    shouldFocusAfterRender={true}
+    shouldReturnFocusAfterClose={true}
+  >
+    <div
+      className="modal__title"
+    >
+      Add Utility
+    </div>
+    <div
+      className="modal__content"
+    >
+      <div
+        className="add-utility__row"
+      >
+        <AxisInput
+          icon=""
+          label="Utility Name"
+          placeholder="Utility Name"
+        />
+      </div>
+      <div
+        className="add-utility__row"
+      >
+        <AxisSelect
+          label="Metering Type"
+          placeholder="Select Type"
+        />
+        <AxisInput
+          icon=""
+          label="Average General Service Rate"
+          placeholder="Type Average"
+        />
+      </div>
+      <div
+        className="add-utility__half-row"
+      >
+        <AxisDatePicker
+          label="Metering Type"
+          placeholder="MM/DD/YYYY"
+        />
+      </div>
+      <div
+        className="add-utility__row"
+      >
+        <AxisInput
+          icon=""
+          label="Other Details Regarding Metering Policy"
+          placeholder="Other Details"
+        />
+        <AxisInput
+          icon=""
+          label="Contact Info"
+          placeholder="Contact Info"
+        />
+      </div>
+      <div
+        className="add-utility__row"
+      >
+        <AxisSelect
+          label="Utility Type"
+          placeholder="Select Utility Type"
+        />
+        <AxisInput
+          icon=""
+          label="Areas Served"
+          placeholder="Areas"
+        />
+      </div>
+      <div
+        className="add-utility__row"
+      >
+        <AxisInput
+          icon=""
+          label="G&T Provider"
+          placeholder="G&T Provider"
+        />
+        <AxisInput
+          icon=""
+          label="Interconnection Policy"
+          placeholder="Interconnection Policy"
+        />
+      </div>
+      <div
+        className="add-utility__row"
+      >
+        <AxisInput
+          icon="link"
+          label="Related Documents"
+          placeholder="Document Link"
+        />
+      </div>
+      <div
+        className="add-utility__row"
+      >
+        <AxisCheckBox
+          label="Display in utilities list on lead capture form"
+          objectId=""
+        />
+      </div>
+    </div>
+    <div
+      className="modal__footer"
+    >
+      <div
+        className="modal__btn modal__btn-cancel"
+      >
+        Cancel
+      </div>
+      <div
+        className="modal__btn modal__btn-save"
+      >
+        Save Utility
+      </div>
+    </div>
+  </Modal>
+</Fragment>
+`;

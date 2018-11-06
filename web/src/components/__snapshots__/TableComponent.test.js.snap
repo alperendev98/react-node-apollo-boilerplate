@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TableComponent should match previos snapshot for TableComponent 1`] = `
+<div
+  className="table__container"
+>
+  <div
+    className="table__header"
+  >
+    <div
+      className="table__header-search"
+    >
+      <input
+        className="table__search-box"
+        placeholder="Search"
+        type="text"
+      />
+    </div>
+    <div
+      className="table__header-buttons"
+    >
+      <div
+        className="table__header-button--download"
+      >
+        <img
+          className="table__header-button--image"
+          src="table-download.svg"
+        />
+      </div>
+      <div
+        className="table__header-button--upload"
+      >
+        <img
+          className="table__header-button--image"
+          src="table-upload.svg"
+        />
+      </div>
+      <div
+        className="table__header-button--new"
+      >
+        <img
+          className="table__header-button--image"
+          src="table-history.svg"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    className="table__content-header"
+  >
+    <div
+      className="table__table-header-column"
+    >
+      <input
+        type="checkbox"
+      />
+    </div>
+    <div
+      className="table__table-header-column"
+    >
+      Name
+    </div>
+    <div
+      className="table__table-header-column"
+    >
+      Contact Info
+    </div>
+    <div
+      className="table__table-header-column"
+    >
+      Numberated Field
+    </div>
+    <div
+      className="table__table-header-column"
+    >
+      Other Field
+    </div>
+  </div>
+  <div
+    className="table__row"
+  >
+    <div
+      className="table__column"
+    >
+      <input
+        type="checkbox"
+      />
+    </div>
+    <div
+      className="table__column"
+    >
+      Alliant Energy-Iowa
+    </div>
+    <div
+      className="table__column"
+    >
+      319-385-1577 Customer Service or ask for Sheryl Dorn, sdorn@accessenergycoop.com
+    </div>
+    <div
+      className="table__column"
+    >
+      9.4
+    </div>
+    <div
+      className="table__column"
+    >
+      Other Data
+    </div>
+  </div>
+</div>
+`;

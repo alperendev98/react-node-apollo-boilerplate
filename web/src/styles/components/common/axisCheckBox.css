@@ -1,0 +1,24 @@
+.axis-check {
+  display: flex;
+  align-items: center;
+}
+
+.axis-check__input-container {
+  display: flex;
+  align-items: center;
+}
+
+.axis-check__label {
+  font-family: NunitoSans;
+  font-size: 14px;
+  font-weight: 500;
+  color: #3c3f49;
+}
+
+.axis-check__object {
+  width: 18px;
+  height: 18px;
+  transform: scale(1.2);
+  border-radius: 4px;
+  border: solid 2px #3c3f49;
+}
